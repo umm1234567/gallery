@@ -1,0 +1,88 @@
+* { 
+     margin: 0; 
+     padding: 0; 
+     font-family: 'Kanit', sans-serif; 
+}
+
+.loader
+{
+      position: relative;
+      top:50px;
+      left: -20px;
+
+      transform: skewY(-15deg) translateX(50px) translateY(50px);
+}
+ .loader span 
+{
+     position: relative;
+     left: 40%;
+     top:70%;
+
+     height: 7em;
+     width: 7em;
+
+     display: block;
+     background-color: #3e3f46;
+     transition: 0.5s;
+
+     z-index:  var(--i);
+}
+.loader span:hover
+{
+     background-color: #33a3ee;
+     transition: 0s;
+}
+
+.loader span::before /*좌측 옆면 코드*/ {
+     content: '';
+     position: absolute;
+     top:20;
+     left: -80px;
+     
+     height: 7em;
+     width: 5em;
+
+     background-color: #2e3133;
+     transform-origin:right;
+     transform: skewY(45deg);
+     transition: 0.5s;
+}
+.loader span:hover::before
+{
+     background: #1f5378;
+     transition: 0s;
+}
+.loader span::after
+{
+     content: '';
+     position: absolute;
+     top:-80px;
+     left: 0;
+     width: 7em;
+     height: 5em;
+
+     background-color: #35383e;
+     transform-origin:bottom;
+     transform: skewX(45deg);
+     transition: 0.5s;
+
+}
+.loader span:hover::after
+{
+     background: #2982b9;
+     transition: 0s;
+}
+
+
+
+
+
+
+
+.square-box {
+     display: flex;
+     gap:50%;
+
+     position: relative;
+     left: -200px;
+}

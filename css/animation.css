@@ -1,0 +1,45 @@
+#first
+{
+    animation-name: umm;
+    animation-duration: 5.5s;
+
+    transition:ease-out 1s;
+}
+
+@keyframes umm 
+{
+    0% 
+    {
+        transform: translate(0, 0);
+    }
+    70%
+    {
+        transform: translate(0, 0);
+    }
+    100%
+    {
+        transform: translate(-100%, 0);
+    } 
+} 
+
+
+#contanier
+{
+    animation-name: main;  
+    animation-duration: 3s;
+    animation-delay: 3s;
+    transition: all 1s;
+}
+@keyframes main
+{
+    from
+    {
+        opacity: 0%;
+    }
+    to
+    { 
+        opacity: 100%;
+    }
+}
+
+/*art animation*/

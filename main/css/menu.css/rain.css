@@ -1,0 +1,35 @@
+.rain
+{   
+    display:flex;
+
+    gap: 20px;
+    justify-content: center;
+    
+    position: relative;
+    top:-100px;
+
+    transition: 1s all;
+}
+ .rain > span
+{
+    position: relative;
+    top:0%;
+        
+    width: 20%;   
+    height: 10px;
+
+    background-color: #fff;
+    border-radius: 50%;
+
+    animation: animate 5s linear infinite;
+    animation-duration: calc(40s / var(--i));
+    transform-origin: bottom;
+
+    transition: 1s all;
+}
+@keyframes animate
+{
+   0%{transform: translateY(0) scale(1);}
+   90%{transform: translateY(1000px) scale(1);}
+   100%{transform: translateY(1000px) scale(0);}
+}

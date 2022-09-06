@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@300&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Noto+Serif+HK:wght@300&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:wght@300;900&display=swap');
+#big-square
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.square
+{
+    width:400px;
+    height: 550px;
+    background-color: black;
+    border-radius: 20px;
+}
+#artwork1
+{
+    background-color: #3305f4;
+
+    animation-name: silde;
+    animation-delay: 3.7s;
+    animation-duration: 2s; 
+
+    transition: 1s all;
+}
+#artwork1:hover
+{
+    transform: scale(1.4);
+    margin-right: 100px;
+}
+#artwork2
+{
+    animation-name: silde;
+    animation-delay: 3.9s;
+    animation-duration: 2s; 
+
+    transition: 1s all;
+}
+#artwork2:hover
+{
+    transform: scale(1.4);
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#artwork3
+{
+    background-color: #900500;
+
+    animation-name: silde;
+    animation-delay: 4.0s;
+    animation-duration: 2s; 
+
+    transition: 1s all;
+}
+#artwork3:hover
+{
+    transform: scale(1.4);
+    margin-left: 100px;
+}
+@keyframes silde 
+{
+    from{transform: translateX(-1000%);}
+    to{transform: translate(0%);}
+}
+
+.font
+{ 
+    color: white;
+    /* font-family: 'Noto Serif HK', serif; */
+    font-family: 'DynaPuff', cursive;
+}
+.title
+{
+   font-size: 65px;
+
+   position: relative;
+   top: 5%;
+   left: 9%;
+}
+.number
+{
+   font-size: 80px;
+
+   position: relative;
+   top:65%;
+   left: 8%;
+}
+.made
+{
+    font-size:15px;
+    position: relative;
+    bottom: 21%;
+    left: 58%;
+}
+#made-eeju
+{
+    position: relative;
+    left: 61%;
+    bottom: 21%;
+}
+.border-square
+{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    z-index: 30;
+}
+    
+#ArtWork-Gallery
+{
+    color: white;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+footer 
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    height: 50px;
+}

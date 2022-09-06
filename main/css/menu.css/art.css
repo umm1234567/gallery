@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@300&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&family=Noto+Serif+HK:wght@300&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:wght@300;900&display=swap');
+
+a {
+    text-decoration: none;
+}
+
+#big-square {
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.square {
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+}
+
+@media (max-width:1220px) {
+    .square {
+        width: 300px;
+        height: 400px;
+    }
+}
+@media (max-width:1000px) {
+    .square {
+        width: 250px;
+        height: 350px;
+
+        font-size: 10px;
+    }
+}
+
+
+#artwork1 {
+    background-color: #1166a9;
+    display: flex;
+    flex-direction: column;
+
+    animation-delay: 3.7s;
+
+    transition: 1s all;
+}
+
+#artwork2 {
+    background-color: black;
+    animation-delay: 3.9s;
+    transition: 1s all;
+}
+
+#artwork3 {
+    background-color: #900500;
+
+    animation-delay: 4.0s;
+    transition: 1s all;
+}
+
+.slideSquare {
+    animation-name: slide;
+    animation-duration: 2s;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(-500%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+
+}
+
+.square:hover {
+    transform: scale(1.1);
+}
+
+#artwork1:hover {
+    margin-right: 80px;
+}
+
+#artwork2:hover {
+    margin-right: 80px;
+    margin-left: 80px;
+}
+
+#artwork3:hover {
+    margin-left: 80px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+
+    margin-top: 30px;
+
+    height: 50px;
+    width: 100%;
+}
+
+.number {
+    font-size: 24px;
+
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: 30px;
+}
+
+.title {
+    font-size: 3em;
+    margin-left: 20px;
+}
+
+.made {
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+
+.font {
+    color: white;
+    /* font-family: 'Noto Serif HK', serif; */
+    font-family: 'DynaPuff', cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.border-square {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+
+
+#ArtWork-Gallery {
+    color: white;
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+
+    width: 100%;
+    height: 50px;
+}
+
+header {
+    position: fixed;
+    top: 0%;
+
+    width: 100%;
+    height: 50px;
+}

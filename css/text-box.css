@@ -1,0 +1,53 @@
+#art
+{
+    padding-left: 40px;
+
+    animation-name: left;
+    animation-duration: 2.5s;
+}
+@keyframes left 
+{
+    from {transform : translateX(-1000%);}
+    to{transform : translateX(0%);}
+}
+
+
+#work
+{   
+    padding-left: 10px;
+    padding-right: 50px;
+
+    animation-name: down;
+    animation-duration: 2.5s;
+}
+
+@keyframes down
+{
+    from {transform : translateY(-1000%);}
+    to {transform : translateY(0%);}
+}
+
+#text-box::after
+{
+    content: '';
+    
+    background-color: white ;
+
+    width: 0%;
+    height:3px;
+
+    position: absolute;
+    bottom:18%;
+
+    animation-name:right;
+    animation-delay: 1s;
+    animation-duration: 4s;
+}
+
+@keyframes right 
+{
+    from{width: 0%;}
+    50%{width: 100%;}
+    to{width: 0%;}
+}
+
